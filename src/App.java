@@ -64,8 +64,8 @@ public class App {
     // }
 
     //! PRUEBA 5 - for
-    public static void main(String args[]){
-        System.out.println("");
+    //public static void main(String args[]){
+        //System.out.println("");
 
         // for(int i=1; i<=10; i++){
         //     System.out.print(i+" ,");
@@ -76,14 +76,50 @@ public class App {
         //     System.out.print(i+" , "+ num-- +" , ");
         // }
         
-        int ind0=0; //
-        int ind1=0;
-        for(int i=0; i<=10; i++){ 
-            int result=ind0+ind1; //0
-            System.out.print(result +" , "); //0,1,1
-            ind0= ind1; //0
-            ind1= result; //0
-            
+    //     int ind0=0; 
+    //     int ind1=1; 
+    //     int result=0;
+    //     for(int i=0; i<=10; i++){ 
+    //         if (i<10) { 
+    //             System.out.print(ind0 +" , "); //0,1,
+    //             result=ind0+ind1;
+    //             ind0=ind1;
+    //             ind1=result;
+    //         } else{
+    //             System.out.print(ind0);
+    //         }
+    //     }
+    // }
+
+    //! PRUEBA 6 - comparacion con .equals()
+    // public static void main(String[] args) {
+    //     @SuppressWarnings("resource")
+    //     Scanner entrada= new Scanner(System.in);
+    //     System.out.println("");
+    //     System.out.print("Ingrese el primer nombre: ");
+    //     String nombre1= entrada.nextLine();
+    //     System.out.print("Ingrese el segundo nombre: ");
+    //     String nombre2= entrada.nextLine();
+
+    //     if(nombre1.equals(nombre2)){
+    //         System.out.println("Los nombres son iguales");
+    //     } else{
+    //         System.out.println("Los nombres son diferentes");
+    //     }
+    // }
+
+    public static void main(String[] args) {
+        Scanner entrada= new Scanner(System.in);
+        String usuario= "admin", password="1234";
+        System.out.print("Ingrese el usuario: ");
+        String user= entrada.nextLine();
+        System.out.print("Ingrese la contraseña: ");
+        String pass= entrada.nextLine();
+        if(user.equals(usuario) && pass.equals(password)){
+            System.out.println("Bienvenido, inicio de sesion correcto");
+        } else{ 
+            System.out.println("Error, inicio de sesion incorrecto");
         }
+
     }
 }
