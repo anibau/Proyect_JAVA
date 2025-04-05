@@ -108,18 +108,48 @@ public class App {
     //     }
     // }
 
+    // public static void main(String[] args) {
+    //     Scanner entrada= new Scanner(System.in);
+    //     String usuario= "admin", password="1234";
+    //     System.out.print("Ingrese el usuario: ");
+    //     String user= entrada.nextLine();
+    //     System.out.print("Ingrese la contraseña: ");
+    //     String pass= entrada.nextLine();
+    //     if(user.equals(usuario) && pass.equals(password)){
+    //         System.out.println("Bienvenido, inicio de sesion correcto");
+    //     } else{ 
+    //         System.out.println("Error, inicio de sesion incorrecto");
+    //     }
+
+    // }
+
+    //! PRUEBA 7 . vectores y matrices
     public static void main(String[] args) {
-        Scanner entrada= new Scanner(System.in);
-        String usuario= "admin", password="1234";
-        System.out.print("Ingrese el usuario: ");
-        String user= entrada.nextLine();
-        System.out.print("Ingrese la contraseña: ");
-        String pass= entrada.nextLine();
-        if(user.equals(usuario) && pass.equals(password)){
-            System.out.println("Bienvenido, inicio de sesion correcto");
-        } else{ 
-            System.out.println("Error, inicio de sesion incorrecto");
+        // int numeros[]= new int[5];
+        // for(int i=0; i<5; i++){
+        //     System.out.print("Ingrese el numero "+(i+1)+": ");
+        //     numeros[i]= new Scanner(System.in).nextInt();
+        // };
+        // System.out.println("");
+        // for(int i=0; i<numeros.length; i++){
+        //     System.out.print(numeros[i]+" , "); 
+        // }
+
+
+        int numeros[][]= new int[2][3];
+        for(int i=0; i<2; i++){
+            for(int j=0; j<3; j++){
+                System.out.print("Ingrese el numero "+(i+1)+", "+(j+1)+": ");
+                numeros[i][j]= new Scanner(System.in).nextInt();
+            }
+        }
+        System.out.println("");
+        for(int i=0; i<2; i++){
+            for(int j=0; j<3; j++){
+                System.out.print(" ["+ numeros[i][j]+"] "); 
+            };
+            System.out.println("");
         }
 
     }
-}
+}   
